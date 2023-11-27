@@ -244,12 +244,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3rem;
+    margin-top: 5rem;
 }
 
 .wlc {
     color: var(--primary-white);
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .welcome-container {
@@ -260,6 +260,7 @@ body {
   width: min(95%, 70rem);
   justify-content: center;
   grid-template-columns: repeat(2, 1fr);
+  margin-top: 3rem;
 }
 
 .welcome-block {
@@ -267,10 +268,10 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 5rem;
+    padding: 4rem;
     color: white;
     border: 2px solid var(--dark-border);
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .welcome-block {
@@ -278,7 +279,7 @@ body {
 }
 
 .welcome-image {
-    background-image: url(images/toa-heftiba-412579.png);
+    background-image: url(images/chris-nguyen-tXmc2mVDxJc-unsplash.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -287,3 +288,193 @@ body {
 .join-us {
     font-weight: 700;
 }
+
+@media (max-width: 950px) {
+  .welcome-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .welcome-image {
+    aspect-ratio: 1.8;
+  }
+}
+
+.container-bg.purple {
+  background-color: var(--purple-grey);
+}
+
+.container-home {
+  gap: 1.5rem;
+  display: grid;
+  margin-inline: auto;
+  padding-block: 2rem;
+  width: min(95%, 70rem);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+.container-item img {
+  max-width: 100%;
+  min-height: 100%;
+}
+
+
+.container-item:last-child {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+.container-item:nth-child(1) {
+  grid-row: span 2;
+}
+
+@media (max-width: 550px) {
+  .container-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+
+
+.exhibition {
+  font-size: 13px;
+  color: var(--primary-white);
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  box-shadow: 2.5rem 3.75rem 3rem -3rem black;
+  font-weight: 500;
+}
+
+.cosmology {
+  background-color: var(--primary-purple);
+  background-image: url(images/space.png);
+  background-size: 45%;
+  background-repeat: no-repeat;
+  background-position: top right 15%;
+}
+
+.robotic {
+  background-color: var(--purple-grey);
+  background-image: url(images/ai.png);
+  background-size: 45%;
+  background-repeat: no-repeat;
+  background-position: top right 15%;
+}
+
+.ecology {
+  background-color: var(--body-bg);
+  background-image: url(images/save-the-world.png);
+  background-size: 45%;
+  background-repeat: no-repeat;
+  background-position: top right 15%;
+}
+
+.evolution {
+  background-color: var(--primary-green);
+  background-image: url(images/evolution.png);
+  background-size: 45%;
+  background-repeat: no-repeat;
+  background-position: top right 15%;
+}
+
+.biology {
+  background-color: var(--body-bg);
+  background-image: url(images/molecular.png);
+  background-size: 45%;
+  background-repeat: no-repeat;
+  background-position: bottom right 15%;
+}
+
+.exhibition-grid {
+  gap: 1.5rem;
+  display: grid;
+  margin-inline: auto;
+  padding-block: 2rem;
+  width: min(95%, 70rem);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.sub-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.ex-title {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 900px) {
+  .exhibition-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .exhibition:last-child {
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+
+  .cosmology,
+  .evolution {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 850px) {
+  .exhibition {
+    background-size: 25%;
+  }
+}
+
+.btn a {
+  text-decoration: none;
+  color: var(--primary-white);
+  padding: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  margin: 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  margin-top: 1rem ;
+}
+
+.view-more {
+  background-color: var(--primary-purple);
+  display: flex;
+  border: none;
+}
+
+.explore {
+  background-color: var(--primary-green);
+  border: none;
+  display: flex;
+}
+
+
+h3.exhibition-spaces {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-white);
+  font-size: 40px;
+  font-weight: 300;
+}
+
+
