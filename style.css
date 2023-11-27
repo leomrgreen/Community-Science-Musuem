@@ -194,7 +194,7 @@ body {
 .banner {
     background-image: url(images/BANNER.png);
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
     width: 100%;
@@ -300,9 +300,9 @@ body {
   }
 }
 
-.container-bg.purple {
+/* .container-bg.purple {
   background-color: var(--purple-grey);
-}
+} */
 
 .container-home {
   gap: 1.5rem;
@@ -478,3 +478,74 @@ h3.exhibition-spaces {
 }
 
 
+.explore-grid {
+  display: grid;
+  margin-inline: auto;
+  padding-block: 2rem;
+  width: min(95%, 70rem);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  padding: 20px;
+}
+
+.explore-item {
+  background-color: var(--primary-green);
+  height: 400px;
+}
+
+.teacher {
+  background-image: url(images/teacher-removebg-preview.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.kid {
+  background-image: url(images/kid-removebg-preview.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
+
+.research {
+  background-image: url(images/researcher-removebg-preview.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container-bg.green {
+  background-color: #579D73;
+}
+
+.explore-item.paragraph {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-purple);
+  background-color: #579D73;
+  font-weight: 300;
+}
+
+
+@media (max-width: 850px) {
+  .explore-grid {
+    grid-template-columns: 1fr;
+    gap: 0rem;
+  }
+
+  .explore-item:nth-child(1) {
+    grid-row: 2;
+  }
+
+  .explore-item:nth-child(3) {
+    grid-row: 4;
+  }
+
+  .explore-item:last-child {
+    grid-row-start: 5;
+  }
+
+}
