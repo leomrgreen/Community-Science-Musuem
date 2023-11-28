@@ -14,7 +14,7 @@ body {
 :root {
     --primary-green: #376047;
     --body-bg: #202020;
-    --primary-purple: #482144;
+    --primary-purple: #29224C;
     --secondary-purple: #5C3E59;
     --purple-grey: #78717C;
     --primary-white: #FFFFFF;
@@ -25,12 +25,12 @@ body {
     background-color: var(--primary-green);
     list-style-type: none;
     padding: 1rem;
-    border-radius: 15px;
 }
 
 .get-involved > li a {
     color: var(--primary-white);
     text-decoration: none;
+    font-weight: 400;
 }
 
 .menu {
@@ -81,12 +81,13 @@ body {
   .menu > li a {
     text-decoration: none;
     color: var(--primary-white);
-    font-weight: 600;
+    font-weight: 400;
   }
 
   .menu > li a:hover {
     font-weight: 800;
   }
+
   
   .menu-button-container {
     display: none;
@@ -158,6 +159,11 @@ body {
       align-items: center;
     }
 
+    .padding {
+      opacity: 0;
+    }
+
+
     #menu-toggle ~ .menu li {
       height: 0;
       margin: 0;
@@ -166,9 +172,8 @@ body {
       transition: 400ms ease;
     }
     #menu-toggle:checked ~ .menu li {
-      border: .5px solid var(--purple-grey);
-      height: 2.5em;
-      padding: 0.3em;
+      height: 4.5rem;
+      padding: 1em;
       transition: 400ms ease;
     }
     .menu > li {
@@ -339,17 +344,24 @@ body {
     justify-content: center;
     align-items: center;
   }
+
 }
-
-
 
 .exhibition {
   font-size: 13px;
   color: var(--primary-white);
   padding: 0.8rem;
-  
+  cursor: grab;
   box-shadow: 2.5rem 3.75rem 3rem -3rem black;
   font-weight: 500;
+}
+
+.exhibition:hover {
+  transform: translateY(-20px);
+  background: var(--primary-white);
+  color: #000000;
+  transition: ease-out 0.3s;
+  border-radius: 0.3rem;
 }
 
 .cosmology {
@@ -529,6 +541,11 @@ body {
   box-shadow: #1b3324 5px 5px;
 }
 
+.btn.explore-banner {
+  border: 3px solid #220f20;
+}
+
+
 .view-more:hover,
 .involved:hover,
 .explore-banner:hover {
@@ -579,6 +596,8 @@ h3.exhibition-spaces {
   min-height: 400px;
 }
 
+
+
 .teacher {
   background-image: url(images/teacher5-removebg-preview.png);
   background-size: contain;
@@ -616,6 +635,10 @@ h3.exhibition-spaces {
   font-weight: 300;
 }
 
+.paragraph h3 {
+  font-weight: 400;
+}
+
 
 @media (max-width: 850px) {
   .explore-grid {
@@ -627,13 +650,10 @@ h3.exhibition-spaces {
     grid-row: 2;
   }
 
-  .explore-item:nth-child(3) {
-    grid-row: 4;
-  }
-
   .explore-item:last-child {
     grid-row-start: 5;
   }
+
 
 }
 
@@ -665,4 +685,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
   }
+
 }
+
+
