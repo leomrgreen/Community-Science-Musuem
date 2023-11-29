@@ -215,7 +215,7 @@ body {
     align-items: center;
 }
 
-.banner h1 {
+.banner-title {
     font-size: 40px;
     font-weight: 400;
 }
@@ -689,3 +689,38 @@ footer {
 }
 
 
+.exhibition-banner {
+  background-image: url(images/exhibition-banner.png);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.ex-container {
+  gap: 1.5rem;
+  display: grid;
+  margin-inline: auto;
+  padding-block: 2rem;
+  width: min(95%, 70rem);
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.ex-item {
+  background-color: var(--primary-purple);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  
+}
+
+.ex-item img {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+  object-position: center;
+}
+
+.ex-item:nth-child(3) {
+  grid-column: span 2;
+}
