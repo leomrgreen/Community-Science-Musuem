@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;0,700;0,800;1,300;1,500;1,700&display=swap');
 
+
+/* ALL PAGES */
+
 *, *::after, *::before {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
@@ -60,7 +63,7 @@ body {
     height: 60px;
     padding: 3em;
     position: fixed;
-    z-index: 2;
+    z-index: 99999;
     width: 100%;
   }
   
@@ -190,13 +193,40 @@ body {
     .menu > li a {
         color: var(--primary-white);
     }
-
-    /* .logo-csm {
-        margin-left: -30px;
-    } */
   }
 
+  footer {
+    background-color: var(--primary-white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .social-media img {
+    margin: 1rem;
+  }
+  
+  @media (max-width: 700px) {
+    .social-media p {
+      display: none;
+    }
+    .social-icons {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+  
+  }
 
+/* HOME PAGE */
 
 .banner {
     background-image: url(images/SPACE-BANNER.png);
@@ -257,6 +287,7 @@ body {
 .wlc {
     color: var(--primary-white);
     font-size: 40px;
+    font-weight: 300;
 }
 
 .welcome-container {
@@ -597,7 +628,6 @@ h3.exhibition-spaces {
 }
 
 
-
 .teacher {
   background-image: url(images/teacher5-removebg-preview.png);
   background-size: contain;
@@ -657,37 +687,8 @@ h3.exhibition-spaces {
 
 }
 
-footer {
-  background-color: var(--primary-white);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem;
-}
 
-.social-media {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.social-media img {
-  margin: 1rem;
-}
-
-@media (max-width: 700px) {
-  .social-media p {
-    display: none;
-  }
-  .social-icons {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-}
-
+/* EXHIBITION PAGE */
 
 .exhibition-banner {
   background-image: url(images/exhibition-banner.png);
@@ -706,12 +707,43 @@ footer {
 }
 
 .ex-item {
-  background-color: var(--primary-purple);
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+.overlay-content {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
   text-align: center;
-  
+  transition: transform 0.5s ease-in-out;
+  transform: translateY(50px);
+  opacity: 0; 
+  background-color: rgba(41,34,76,0.9);
+  z-index: 2;
+}
+
+
+.ex-item:hover .overlay-content {
+  transform: translateY(0);
+  opacity: 1; 
+}
+
+.overlay-content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: var(--primary-white);
+}
+
+.overlay-content p {
+  font-size: 13px;
+  color: var(--primary-white);
+  font-weight: 300;
 }
 
 .ex-item img {
@@ -723,4 +755,78 @@ footer {
 
 .ex-item:nth-child(3) {
   grid-column: span 2;
+}
+
+
+.ex-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(41,34,76,0.95);
+  z-index: 1;
+  opacity: 0;
+  text-align: center;
+  justify-content: center;
+  color: white;
+  transition: ease-out 0.5s;
+}
+
+.ex-item:hover::before {
+  opacity: 1;
+}
+
+@media (max-width: 900px) {
+  .ex-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .ex-item:nth-child(3) {
+    grid-column: span 1;
+  }
+}
+
+.upcomming-bg {
+  background-color: var(--primary-purple);
+}
+
+.upcomming {
+  gap: 1.5rem;
+  display: grid;
+  margin-inline: auto;
+  padding-block: 2rem;
+  width: min(95%, 70rem);
+}
+
+.event-item img {
+  max-width: 100%;
+}
+
+.event-item {
+  justify-content: center;
+  text-align: center;
+  color: var(--primary-white);
+}
+
+.event-item p {
+  font-weight: 300;
+}
+
+.intrested {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 2rem;
+  color: var(--primary-white);
+}
+
+.intrested p {
+  margin-top: -10px;
+}
+
+.toppad {
+  padding-top: 2rem;
 }
