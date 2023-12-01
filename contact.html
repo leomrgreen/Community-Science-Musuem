@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="top-nav">
+      <div>
+        <a href="index.html">
+          <img
+            src="images/CSM-LOG.png"
+            class="logo-csm"
+            alt="Community Science Museum LOGO"
+          />
+        </a>
+      </div>
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button-container" for="menu-toggle">
+        <div class="menu-button"></div>
+      </label>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="exhibition.html">Exhibitions</a></li>
+      </ul>
+      <ul class="get-involved">
+        <li><a href="#">Get Involved</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="banner contact-banner">
+        <h1 class="banner-title contact-t">WELCOME TO CSM</h1>
+        <span>Meadow View 14 Fjellstrand Nordfjord, 2010 Norway </span>
+      </div>
+
+      <div class="contact-bg">
+        <div class="welcome">
+          <span class="wlc">CONTACT US</span>
+        </div>
+        <p class="question">
+          Whether you have a question or would like to get in touch about
+          supporting our museum. Please fill in the form below and we will get
+          back to you shortly.
+        </p>
+
+        <div class="contact-container">
+          <form>
+            <div class="form-row">
+              <label for="fname">FULL NAME*</label>
+              <input
+                type="text"
+                id="fname"
+                name="fullname"
+                placeholder="Your Full Name"
+              />
+            </div>
+
+            <div class="form-row">
+              <label for="email">EMAIL*</label>
+              <input
+                type="email"
+                id="email"
+                name="e-mail"
+                placeholder="Your Email Address"
+              />
+            </div>
+
+            <div class="form-row">
+              <label for="subject">SUBJECT</label>
+              <input type="text" id="subject" name="subject" placeholder="" />
+            </div>
+
+            <div class="form-row">
+              <label for="message">MESSAGE*</label>
+              <textarea name="message" id="message" rows="10"></textarea>
+            </div>
+
+            <div class="form-row">
+              <input type="submit" value="SUBMIT" />
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div class="how-to-explore">
+        <div class="welcome">
+          <span class="wlc">HOW DO I EXPLORE?</span>
+        </div>
+        <div class="how-flex">
+          <div class="flex-item accessible"></div>
+          <div class="flex-item ticket"></div>
+          <div class="flex-item shop"></div>
+          <div class="flex-item food"></div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -79,6 +79,8 @@ body {
     margin: 0 1rem;
     overflow: hidden;
     margin-top: 0.5rem;
+    display: inline block;
+    transition: 0.3s ease-in-out;
   }
   
   .menu > li a {
@@ -88,7 +90,7 @@ body {
   }
 
   .menu > li a:hover {
-    font-weight: 800;
+    font-weight: 700;
   }
 
   
@@ -829,4 +831,110 @@ h3.exhibition-spaces {
 
 .toppad {
   padding-top: 2rem;
+}
+
+.contact-banner {
+  height: 70vh;
+  background-image: url(images/contactpage.png);
+}
+
+.contact-t {
+  margin-bottom: 4px;
+}
+
+
+.contact-container {
+  max-width: min(95%, 70rem);
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-weight: 300;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem; 
+}
+
+  input, textarea, input[type="submit"] {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+input[type="submit"] {
+  background-color: var(--primary-green);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #38704f;
+  box-shadow: #1b3324 5px 5px;
+  transform: translateY(-5px);
+  transition: ease-in 0.3s;
+}
+
+.contact-bg {
+  background-color: var(--primary-purple);
+  padding: 2rem;
+}
+
+.question {
+  width: min(95%,50rem);
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 1rem;
+  color: var(--primary-white);
+  font-weight: 300;
+}
+
+.how-to-explore {
+  background-color: var(--primary-green);
+  padding-top: 2rem;
+}
+
+
+.how-flex {
+  display: grid;
+  margin-inline: auto;
+  padding-block: 2rem;
+  width: min(95%, 70rem);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5rem;
+  padding: 20px;
+}
+
+.flex-item {
+  height: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.accessible {
+  background-image: url(images/access2.png);
+}
+
+.ticket {
+  background-image: url(images/ticket2.png);
+}
+
+.shop {
+  background-image: url(images/cart2.png);
+}
+
+.food {
+  background-image: url(images/food2.png);
 }
