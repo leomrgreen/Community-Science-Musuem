@@ -376,7 +376,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 4rem;
+    padding: 1rem;
     color: white;
     border: 2px solid var(--dark-border);
     gap: 1rem;
@@ -1029,8 +1029,8 @@ table {
   font-weight: 300;
 }
 
-th, td {
-  padding: 8px 12px;
+td {
+  padding: 1.5rem 2rem;
   text-align: left;
 }
 
