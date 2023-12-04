@@ -18,11 +18,11 @@ body {
     --primary-green: #376047;
     --body-bg: #202020;
     --primary-purple: #29224C;
-    --secondary-purple: #5C3E59;
     --purple-grey: #78717C;
     --primary-white: #FFFFFF;
     --dark-border: #171717;
 }
+
 
 .get-involved {
     background-color: var(--primary-green);
@@ -35,6 +35,7 @@ body {
     text-decoration: none;
     font-weight: 400;
 }
+
 
 .menu {
     display: flex;
@@ -196,36 +197,10 @@ body {
     }
   }
 
-  /* footer {
-    background-color: var(--primary-white);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem;
+  .container {
+    width: min(95%, 70rem);
+    margin-inline: auto;
   }
-  
-  .social-media {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 0.5rem;
-  }
-  
-  .social-media img {
-    margin: 1rem;
-  }
-  
-  @media (max-width: 700px) {
-    .social-media p {
-      display: none;
-    }
-    .social-icons {
-      display: grid;
-      grid-template-columns: 1fr;
-    }
-  
-  } */
 
   footer {
     display: flex;
@@ -363,9 +338,7 @@ body {
 .welcome-container {
   gap: 1.5rem;
   display: grid;
-  margin-inline: auto;
   padding-block: 2rem;
-  width: min(95%, 70rem);
   justify-content: center;
   grid-template-columns: repeat(2, 1fr);
   margin-top: 3rem;
@@ -415,9 +388,7 @@ body {
 .container-home {
   gap: 1.5rem;
   display: grid;
-  margin-inline: auto;
   padding-block: 2rem;
-  width: min(95%, 70rem);
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -455,6 +426,9 @@ body {
   cursor: grab;
   box-shadow: 2.5rem 3.75rem 3rem -3rem black;
   font-weight: 500;
+  background-size: 45%;
+  background-repeat: no-repeat;
+  background-position: top right 15%;
 }
 
 .exhibition:hover {
@@ -468,49 +442,37 @@ body {
 .cosmology {
   background-color: var(--primary-purple);
   background-image: url(images/space.png);
-  background-size: 45%;
-  background-repeat: no-repeat;
-  background-position: top right 15%;
+  
 }
 
 .robotic {
   background-color: var(--purple-grey);
   background-image: url(images/ai.png);
-  background-size: 45%;
-  background-repeat: no-repeat;
-  background-position: top right 15%;
+ 
 }
 
 .ecology {
   background-color: var(--body-bg);
   background-image: url(images/save-the-world.png);
-  background-size: 45%;
-  background-repeat: no-repeat;
-  background-position: top right 15%;
+ 
 }
 
 .evolution {
   background-color: var(--primary-green);
   background-image: url(images/evolution.png);
-  background-size: 45%;
-  background-repeat: no-repeat;
-  background-position: top right 15%;
+  
 }
 
 .biology {
   background-color: var(--body-bg);
   background-image: url(images/molecular.png);
-  background-size: 45%;
-  background-repeat: no-repeat;
   background-position: bottom right 15%;
 }
 
 .exhibition-grid {
   gap: 1.5rem;
   display: grid;
-  margin-inline: auto;
   padding-block: 2rem;
-  width: min(95%, 70rem);
 }
 
 .flex {
@@ -579,9 +541,7 @@ body {
 .image-gallery {
   gap: 1.5rem;
   display: grid;
-  margin-inline: auto;
   padding-block: 2rem;
-  width: min(95%, 70rem);
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -638,22 +598,28 @@ body {
 }
 
 .explore:hover,
-.visit:hover {
+.visit:hover,
+.get-involved:hover {
   box-shadow: #1b3324 5px 5px;
 }
 
 .btn.explore-banner {
-  border: 3px solid #220f20;
+  border: 5px solid rgb(12, 1, 44);
 }
 
 
 .view-more:hover,
 .involved:hover,
 .explore-banner:hover {
-  box-shadow: #220f20 5px 5px;
+  box-shadow: rgb(12, 1, 44) 5px 5px;
 }
 
 .btn:hover {
+  transform: translateY(-5px);
+  transition: ease-in 0.3s;
+}
+
+.get-involved:hover {
   transform: translateY(-5px);
   transition: ease-in 0.3s;
 }
@@ -684,9 +650,7 @@ h3.exhibition-spaces {
 
 .explore-grid {
   display: grid;
-  margin-inline: auto;
   padding-block: 2rem;
-  width: min(95%, 70rem);
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
   padding: 20px;
@@ -770,9 +734,7 @@ h3.exhibition-spaces {
 .ex-container {
   gap: 1.5rem;
   display: grid;
-  margin-inline: auto;
   padding-block: 2rem;
-  width: min(95%, 70rem);
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -866,9 +828,7 @@ h3.exhibition-spaces {
 .upcomming {
   gap: 1.5rem;
   display: grid;
-  margin-inline: auto;
   padding-block: 2rem;
-  width: min(95%, 70rem);
 }
 
 .event-item img {
@@ -911,10 +871,6 @@ h3.exhibition-spaces {
 }
 
 
-.contact-container {
-  max-width: min(95%, 70rem);
-  margin: 0 auto;
-}
 
 form {
   display: flex;
@@ -983,8 +939,6 @@ input[type="submit"]:hover {
   margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-inline: auto;
-  width: min(95%, 70rem);
   gap: 1.5rem;
   justify-content: center;
   padding-block: 2rem;
@@ -1053,8 +1007,6 @@ td:nth-child(2), th:nth-child(2) {
   margin-top: 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  margin-inline: auto;
-  width: min(95%, 70rem);
   gap: 1.5rem;
   justify-content: center;
   padding-block: 2rem;
@@ -1089,3 +1041,39 @@ td:nth-child(2), th:nth-child(2) {
   }
 
 }
+
+    .last-update {
+      color: var(--purple-grey);
+      font-size: 12px;
+    }
+
+  .policy-banner {
+    background-color: var(--body-bg);
+    height: 8vh;
+  }
+
+  .terms-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .terms-container h3 {
+    color: var(--primary-white);
+    display: flex;
+  }
+
+  .terms-container p {
+    color: var(--primary-white);
+    font-weight: 300;
+  }
+
+  .terms-container a {
+    color: var(--primary-green);
+  }
+
+  .conditions {
+    color: var(--primary-white);
+    display: flex;
+    justify-content: center;
+  }
