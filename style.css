@@ -546,11 +546,10 @@ body {
 }
 
 .gallery-item {
-  background-color: red;
   aspect-ratio: 0.8/1;
 }
 
-.gallery-item:first-child { background-image: url(images/flatart1.png); }
+.gallery-item:first-child { background-image: url(images/flatart-polarb.png); }
 .gallery-item:nth-child(2) { background-image: url(images/flatart-plane.png); }
 .gallery-item:nth-child(3) { background-image: url(images/flatart-lab.png); }
 .gallery-item:nth-child(4) { background-image: url(images/flatart-dino.png); }
