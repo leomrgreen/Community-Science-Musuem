@@ -443,7 +443,7 @@ body {
   max-width: 100%;
   min-height: 100%;
   background-color: var(--secondary-purple);
-  box-shadow: 2.5rem 3.75rem 3rem -3rem var(--primary-white);
+  box-shadow: 2.5rem 3.75rem 3rem -4rem var(--primary-white);
   padding: 1rem;
 }
 
