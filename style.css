@@ -58,7 +58,8 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: var(--primary-purple);
+    background-color: rgba(41,34,76,0.4);
+    backdrop-filter: blur(1rem);
     color: #fff;
     height: 60px;
     padding: 3em;
@@ -69,7 +70,7 @@ body {
   
   .menu {
     display: flex;
-    flex-direction: row;
+
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -114,7 +115,7 @@ body {
     display: block;
     background-color: var(--primary-white);
     position: absolute;
-    height: 5px;
+    height: 2px;
     width: 50px;
     transition: 400ms ease;
     border-radius: 99999px;
@@ -143,6 +144,7 @@ body {
     margin-top: 0px;
     transform: rotate(-405deg);
   }
+
 
   @media (max-width: 768px) {
 
@@ -187,7 +189,6 @@ body {
       margin: 0;
       padding: 0.5em 0;
       width: 100%;
-      color: var(--body-bg);
       background-color: var(--primary-purple);
       z-index: 1;
     }
