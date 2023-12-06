@@ -430,6 +430,7 @@ footer {
   max-width: 100%;
   min-height: 100%;
   padding: 1rem;
+  border: 2px solid rgb(12, 1, 44);
 }
 
 .container-item:nth-child(1) {
