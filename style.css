@@ -60,8 +60,7 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(41,34,76,0.4);
-    backdrop-filter: blur(1rem);
+    background-color: rgba(41,34,76,0.99);
     color: #fff;
     height: 60px;
     padding: 3em;
@@ -276,7 +275,6 @@ body {
 
 .banner {
     background-color: var(--primary-purple);
-    background-attachment: fixed;
     padding-top: 200px;
     padding-bottom: 200px;
     justify-content: center;
@@ -442,8 +440,6 @@ body {
 .container-item img {
   max-width: 100%;
   min-height: 100%;
-  background-color: var(--secondary-purple);
-  box-shadow: 2.5rem 3.75rem 3rem -4rem var(--primary-white);
   padding: 1rem;
 }
 
@@ -736,12 +732,10 @@ body {
 
   .explore-item:nth-child(1) {
     grid-row: 2;
-    margin-top: -3rem;
   }
 
   .explore-item:last-child {
     grid-row-start: 5;
-    margin-bottom: -3rem;
   }
 
 
@@ -809,7 +803,7 @@ body {
   max-width: 100%;
   max-height: 100%;
   object-position: center;
-  background-color: var(--primary-purple);
+  background-color: var(--secondary-green);
   box-shadow: 2.5rem 3.75rem 3rem -3rem black;
 }
 
@@ -850,7 +844,7 @@ body {
 }
 
 .upcomming-bg {
-  background-color: var(--purple-grey);
+  background-color: var(--primary-purple);
 }
 
 .upcomming {
