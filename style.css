@@ -50,7 +50,7 @@ body {
 }
 
 .logo-csm {
-  width: 100%;
+  max-width: 100%;
 }
 
 .top-nav {
@@ -276,6 +276,7 @@ footer {
     margin-inline: auto;
     background-size: cover;
     overflow-x: hidden;
+    min-height: 70vh;
 }
 
 .greenastro {
@@ -348,15 +349,10 @@ footer {
 
 .wlc {
   color: var(--primary-white);
-  font-size: 40px;
+  font-size: 30px;
   font-weight: 300;
 }
 
-@media (max-width: 400px) {
-  .wlc {
-    font-size: 30px;
-  }
-}
 
 @media (max-width: 500px) {
   .opening {
@@ -608,11 +604,6 @@ footer {
   }
 }
 
-@media (max-width: 650px) {
-  .image-gallery {
-    grid-template-columns: 1fr;
-  }
-}
 
 .explore {
   background-color: var(--primary-green);
@@ -750,6 +741,15 @@ footer {
   cursor: pointer;
 }
 
+.testmest {
+  color: var(--primary-white);
+  display: flex;
+  justify-content: center;
+  background-color: var(--secondary-green);
+  margin: 0;
+  padding: 1rem;
+}
+
 .overlay-content {
   position: absolute;
   top: 0%;
@@ -768,6 +768,10 @@ footer {
 .ex-item:hover .overlay-content {
   transform: translateY(0);
   opacity: 1;
+}
+
+.ex-item:hover .testmest {
+  opacity: 0;
 }
 
 .overlay-content h2 {
@@ -825,6 +829,7 @@ footer {
     grid-column: span 1;
   }
 }
+
 
 .upcomming-bg {
   background-color: var(--primary-purple);
@@ -1012,8 +1017,6 @@ th:nth-child(2) {
 
 .getin {
   background-image: url(images/getinvolvedbanner.png);
-  height: 60vh;
-  background-attachment: fixed;
   background-position: top right 80%;
 }
 
