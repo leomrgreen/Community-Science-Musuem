@@ -203,13 +203,15 @@ footer {
   display: flex;
   flex-wrap: wrap;
   margin-top: auto;
-  background-color: var(--body-bg);
+  background-color: var(--primary-white);
   padding: 60px 10%;
-  color: var(--primary-white);
+  color: var(--primary-purple);
 }
 
 .footer-col {
   width: 25%;
+  justify-content: center;
+  text-align: center;
 }
 
 .footer-col h4 {
@@ -227,9 +229,9 @@ footer {
 .footer-col a,
 .footer-col {
   text-decoration: none;
-  color: var(--primary-white);
+  color: black;
   transition: 0.4s ease;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 30px;
 }
 
@@ -652,71 +654,47 @@ footer {
   margin-top: 1.5rem;
 }
 
-.explore-grid {
-  display: grid;
-  padding-block: 2rem;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5rem;
-  padding: 20px;
-}
 
-.explore-item {
+.explore-bg {
   background-color: var(--primary-green);
-  min-height: 400px;
+  padding-bottom: 2rem;
 }
 
-.teacher {
-  background-image: url(images/professor.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.kid {
-  background-image: url(images/children.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.research {
-  background-image: url(images/student.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.container-bg.green {
-  background-color: var(--secondary-green);
-  padding: 2rem;
-}
-
-.explore-item.paragraph {
+.explore-flex {
   display: flex;
-  flex-direction: column;
+  margin-inline: auto;
   justify-content: center;
-  align-items: center;
-  color: var(--primary-white);
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+
+.explore-card img {
+  max-width: 100%;
   background-color: var(--secondary-green);
+
+}
+
+.explore-card {
+  display: block;
+  width: 33%;
+  padding: 2rem;
+  color: var(--primary-white);
+}
+
+.explore-card p,
+.explore-card h3 {
   font-weight: 300;
 }
 
-.paragraph h3 {
-  font-weight: 400;
-}
 
-@media (max-width: 850px) {
-  .explore-grid {
-    grid-template-columns: 1fr;
-    gap: 0rem;
+@media (max-width: 1050px) {
+  .explore-flex {
+    flex-direction: column;
   }
 
-  .explore-item:nth-child(1) {
-    grid-row: 2;
-  }
-
-  .explore-item:last-child {
-    grid-row-start: 5;
+  .explore-card {
+    width: 100%;
   }
 }
 
@@ -727,6 +705,7 @@ footer {
   height: 70vh;
   background-position: top right 70%;
   background-size: cover;
+  overflow: hidden;
 }
 
 .ex-container {
