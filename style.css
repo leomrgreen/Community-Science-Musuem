@@ -90,8 +90,8 @@ body {
   font-weight: 400;
 }
 
-.menu > li a:hover {
-  font-weight: 700;
+.menu > li:hover {
+  transform: scale(1.1);
 }
 
 .menu-button-container {
@@ -203,9 +203,8 @@ footer {
   display: flex;
   flex-wrap: wrap;
   margin-top: auto;
-  background-color: var(--primary-white);
+  background-color: var(--body-bg);
   padding: 60px 10%;
-  color: var(--primary-purple);
 }
 
 .footer-col {
@@ -229,14 +228,18 @@ footer {
 .footer-col a,
 .footer-col {
   text-decoration: none;
-  color: black;
-  transition: 0.4s ease;
-  font-weight: 400;
+  color: var(--primary-white);
+  font-weight: 300;
   line-height: 30px;
+  transition: all .2s ease-in-out;
 }
 
-.footer-col a:hover {
-  padding-left: 2px;
+.footer-col li:hover {
+  transform: scale(1.1)
+}
+
+.footer-col li {
+  transition: 250ms ease-in-out;
 }
 
 .social img {
@@ -461,6 +464,10 @@ footer {
   background-position: top right 15%;
 }
 
+ .exhibition-grid > a {
+  text-decoration: none;
+}
+
 .exhibition:hover {
   transform: translateY(-20px);
   background: var(--primary-white);
@@ -632,12 +639,12 @@ footer {
 
 .btn:hover {
   transform: translateY(-5px);
-  transition: ease-in 0.3s;
+  transition: ease-in 0.2s;
 }
 
 .get-involved:hover {
   transform: translateY(-5px);
-  transition: ease-in 0.3s;
+  transition: ease-in 0.2s;
 }
 
 .btn.visit {
@@ -700,12 +707,20 @@ footer {
 
 /* EXHIBITION PAGE */
 
-.exhibition-banner {
-  background-image: url(images/exhibition-banner.png);
-  height: 70vh;
-  background-position: top right 70%;
-  background-size: cover;
-  overflow: hidden;
+
+.meta img {
+  max-width: 100%;
+  -moz-animation: spinHorizontal 3s infinite linear;
+  -o-animation: spinHorizontal 3s infinite linear;    
+  -webkit-animation: spinHorizontal 3s infinite linear;
+  animation: spinHorizontal 3s infinite linear;
+}
+
+
+  
+@keyframes spinHorizontal {
+  0% { transform: rotateY(0deg); }
+  100% { transform: rotateY(360deg); }
 }
 
 .ex-container {
@@ -770,7 +785,7 @@ footer {
   max-width: 100%;
   max-height: 100%;
   object-position: center;
-  background-color: var(--secondary-green);
+  background-color: var(--body-bg);
   box-shadow: 2.5rem 3.75rem 3rem -3rem black;
 }
 
@@ -810,36 +825,24 @@ footer {
 }
 
 
-.upcomming-bg {
-  background-color: var(--primary-purple);
-}
-
-.upcomming {
-  gap: 1.5rem;
-  display: grid;
-  padding-block: 2rem;
-}
-
-.event-item img {
-  max-width: 100%;
-}
-
-.event-item {
-  justify-content: center;
-  text-align: center;
-  color: var(--primary-white);
-}
-
-.event-item p {
-  font-weight: 300;
-}
-
 .intrested {
   display: grid;
   justify-content: center;
   text-align: center;
   padding-bottom: 2rem;
   color: var(--primary-white);
+}
+
+.event-bg {
+  background-color: var(--primary-green);
+}
+
+.explore-card.ev img {
+  background-color: var(--secondary-green);
+}
+
+.ev h3 {
+  font-weight: 700;
 }
 
 .intrested p {
@@ -851,14 +854,11 @@ footer {
 }
 
 .contact-banner {
-  height: 85vh;
-  background-image: url(images/welcomebanner.png);
+  background-color: var(--primary-green);
 }
 
-.contact-banner span {
-  color: var(--primary-white);
-  display: flex;
-  justify-content: center;
+.none img {
+  animation: none;
 }
 
 .contact-t {
@@ -911,6 +911,16 @@ input[type="submit"]:hover {
   background-color: var(--primary-purple);
   padding-top: 2rem;
   padding-bottom: 4rem;
+  background-image: url(images/activesupp.png);
+  background-position: top left -25%;
+  background-size: 50%;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: 700px) {
+  .contact-bg {
+    background-image: none;
+  }
 }
 
 .question {

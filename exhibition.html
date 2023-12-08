@@ -33,9 +33,16 @@
     </nav>
 
     <main>
-      <div class="banner exhibition-banner">
-        <h1 class="banner-title">EXHIBITIONS & EVENTS</h1>
-      </div>
+      <section class="banner">
+        <div class="greenastro">
+          <div class="astro-item">
+            <h1 class="banner-title">EXHIBITIONS & EVENTS</h1>
+          </div>
+          <div class="astro-item meta">
+            <img src="images/metaverso-cuate.png" alt="" />
+          </div>
+        </div>
+      </section>
 
       <div class="welcome">
         <h2 class="wlc">EXHIBITIONS</h2>
@@ -115,13 +122,16 @@
         </div>
       </div>
 
-      <div class="upcomming-bg">
+      <section id="upcome-section" class="explore-bg event-bg">
         <div class="welcome toppad">
           <h2 class="wlc">UPCOMMING EVENTS</h2>
         </div>
-        <div class="container upcomming">
-          <div class="event-item">
-            <img src="images/aero.png" alt="airplane in the sky" />
+        <div class="explore-flex">
+          <div class="explore-card ev">
+            <img
+              src="images/Flying around the world-cuate (1).png"
+              alt="illustration of a professor teaching math in class"
+            />
             <h3>Visiting Professor of Aeronautics</h3>
             <p>(February 8, 2024)</p>
             <p>
@@ -131,8 +141,11 @@
               lies in this exciting ‘space’.
             </p>
           </div>
-          <div class="event-item">
-            <img src="images/nightmus.png" alt="woman sleeping in the sky" />
+          <div class="explore-card ev">
+            <img
+              src="images/Winter solstice-cuate.png"
+              alt="illustration of children that are being proud of unknown work"
+            />
             <h3>Night in the Museum</h3>
             <p>(March 15, 2024)</p>
             <p>
@@ -142,8 +155,11 @@
               wonders of science
             </p>
           </div>
-          <div class="event-item">
-            <img src="images/nemo.png" alt="turbines on landscape" />
+          <div class="explore-card ev">
+            <img
+              src="images/Wind turbine-pana.png"
+              alt="illustration of a young happy person sitting at his desk"
+            />
             <h3>Energetica Exhibition on Loan</h3>
             <p>(April 3, 2024)</p>
             <p>
@@ -159,11 +175,13 @@
         <div class="intrested">
           <h2>INTRESTED IN VISITING?</h2>
           <p>Read more about our opening hours and prices</p>
-          <button class="btn visit">
-            <a href="contact.html">VISIT CSM</a>
-          </button>
+          <div class="cta">
+            <button class="btn view-more">
+              <a href="contact.html#aboutpage">VISIT</a>
+            </button>
+          </div>
         </div>
-      </div>
+      </section>
     </main>
     <footer>
       <div class="footer-col">
@@ -185,16 +203,19 @@
       <div class="footer-col">
         <h4>FOLLOW US</h4>
         <div class="social">
-          <img src="images/facebook (1).png" alt="facebook logo" />
-          <img src="images/instagram (1).png" alt="instagram logo" />
-          <img src="images/twitter (2).png" alt="twitter logo" />
+          <img src="images/facebook (1) 1.png" alt="facebook logo" />
+          <img src="images/instagram (1) 1.png" alt="instagram logo" />
+          <img src="images/twitter (2) 1.png" alt="twitter logo" />
         </div>
       </div>
 
       <div class="footer-col">
-        <div class="csm-bw">
-          <img src="images/CSM-LOGO-BLACK-WHITE.png" alt="CSM logo" />
-        </div>
+        <h4>VISIT CSM</h4>
+        <ul>
+          <li><a href="contact.html#aboutpage">PRICES</a></li>
+          <li><a href="exhibition.html#upcome-section">EVENTS</a></li>
+          <li><a href="exhibition.html">EXHIBITIONS</a></li>
+        </ul>
       </div>
     </footer>
   </body>
