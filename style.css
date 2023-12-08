@@ -417,7 +417,7 @@ footer {
 }
 
 .container-bg.purple {
-  background-color: var(--primary-purple);
+  background-color: var(--primary-green);
   padding: 2rem;
 }
 
@@ -432,7 +432,7 @@ footer {
   max-width: 100%;
   min-height: 100%;
   padding: 1rem;
-  border: 2px solid rgb(12, 1, 44);
+  background-color: var(--secondary-green);
 }
 
 .container-item:nth-child(1) {
@@ -656,7 +656,7 @@ footer {
 
 
 .explore-bg {
-  background-color: var(--primary-green);
+  background-color: var(--primary-purple);
   padding-bottom: 2rem;
 }
 
@@ -671,7 +671,7 @@ footer {
 
 .explore-card img {
   max-width: 100%;
-  background-color: var(--secondary-green);
+  background-color: var(--secondary-purple);
 
 }
 
@@ -739,7 +739,6 @@ footer {
   box-sizing: border-box;
   text-align: center;
   transition: transform 0.5s ease-in-out;
-  transform: translateY(50px);
   opacity: 0;
   background-color: rgba(41, 34, 76, 0.9);
   z-index: 2;
@@ -1052,6 +1051,7 @@ th:nth-child(2) {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding-bottom: 5rem;
 }
 
 .terms-container h3 {
