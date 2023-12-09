@@ -16,8 +16,8 @@ body {
 }
 
 :root {
-  --primary-green: #376047;
-  --secondary-green: #38704f;
+  --primary-green: #136f63;
+  --secondary-green: #3f8179;
   --body-bg: #202020;
   --primary-purple: #29224c;
   --secondary-purple: #342a66;
@@ -624,7 +624,7 @@ footer {
 .explore:hover,
 .visit:hover,
 .get-involved:hover {
-  box-shadow: #1b3324 5px 5px;
+  box-shadow: #080f0f 5px 5px;
 }
 
 .btn.explore-banner {
@@ -901,8 +901,8 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #38704f;
-  box-shadow: #1b3324 5px 5px;
+  background-color: var(--secondary-green);
+  box-shadow: var(--primary-green) 5px 5px;
   transform: translateY(-5px);
   transition: ease-in 0.3s;
 }
@@ -942,7 +942,7 @@ input[type="submit"]:hover {
 
 .how-item img {
   max-width: 100%;
-  background-color: #38704f;
+  background-color: var(--secondary-green);
   padding: 1rem;
 }
 
