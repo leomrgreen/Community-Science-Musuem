@@ -911,7 +911,7 @@ input[type="submit"]:hover {
   background-color: var(--primary-purple);
   padding-top: 2rem;
   padding-bottom: 4rem;
-  background-image: url(images/activesupp.png);
+  background-image: url(images/customersupp.png);
   background-position: top left -25%;
   background-size: 50%;
   background-repeat: no-repeat;
