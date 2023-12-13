@@ -578,13 +578,17 @@ footer {
   grid-template-columns: repeat(3, 1fr);
 }
 
+
+
 .gallery-item {
   aspect-ratio: 0.8/1;
   box-shadow: 2.5rem 3.75rem 3rem -3rem black;
+  
 }
 
 .gallery-item:first-child {
   background-image: url(images/flatart-polarb.png);
+  animation: moveColumn;
 }
 .gallery-item:nth-child(2) {
   background-image: url(images/flatart-plane.png);
@@ -613,6 +617,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 
 
 .explore {
@@ -810,7 +815,8 @@ footer {
   transition: ease-out 0.5s;
 }
 
-.ex-item:hover::before {
+.ex-item:hover::before,
+.ex-item:active::before {
   opacity: 1;
 }
 
@@ -832,6 +838,11 @@ footer {
   padding-bottom: 2rem;
   color: var(--primary-white);
 }
+
+.ex-item:active::before, 
+.ex-item:active .overlay-content {
+  opacity: 1;
+} 
 
 .event-bg {
   background-color: var(--primary-green);
@@ -892,6 +903,7 @@ input[type="submit"] {
   box-sizing: border-box;
   padding: 1rem;
 }
+
 
 input[type="submit"] {
   background-color: var(--primary-green);
