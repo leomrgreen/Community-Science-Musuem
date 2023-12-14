@@ -508,10 +508,48 @@ footer {
   padding-block: 2rem;
 }
 
+.news-letter {
+  background-color: white;
+}
+
+.news-item form {
+  margin-bottom: 1rem;
+  border: 1px solid var(--primary-purple);
+}
+
+.news-letter-flex {
+  color: var(--primary-purple);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.news-item h2 {
+  font-weight: 500;
+}
+
+.news-item p {
+  font-weight: 400;
+  color: var(--body-bg);
+}
+
+.news-item img {
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  .news-letter-flex {
+    flex-direction: column;
+  }
+}
+
 .flex {
   display: flex;
   align-items: center;
 }
+
+
 
 .sub-title {
   font-weight: 700;
