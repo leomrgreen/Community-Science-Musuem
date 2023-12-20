@@ -1028,27 +1028,16 @@ th:nth-child(2) {
   text-align: right;
 }
 
-.involved-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  justify-content: center;
-  padding-block: 2rem;
+
+
+.bg-involved {
+  background-color: var(--body-bg);
 }
 
-.involved-item img {
-  max-width: 100%;
-}
-
-.meaning {
-  color: white;
-  font-weight: 300;
+.meaning  {
   background-color: #2c2c2c;
-  padding: 1rem;
-}
-
-.involved-item > span {
-  font-weight: 500;
+  padding: 0.1rem 1rem 1rem 1rem;
+  margin-top: 0.5rem;
 }
 
 @media (max-width: 750px) {
